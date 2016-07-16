@@ -1,4 +1,4 @@
-def add_numbers(n1, n2):
+def add_integers(n1, n2):
     '''Adds two integers
 
     Raises  TypeError if a non-integer is passed as an argument
