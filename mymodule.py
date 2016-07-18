@@ -14,6 +14,6 @@ def assert_int(n):
     tmp = "{} is not type int"
     if not isinstance(n, int):
         raise TypeError(tmp.format(n))
-
+    return True
 
 

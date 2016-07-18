@@ -16,13 +16,24 @@ class TestMyModule(unittest.TestCase):
         )
 
     def test_add_integers_error_if_not_int(self):
-        pass
+        n1 = 6
+        n2 = 3
+        expected_value = (n1 != n2)
+        self.assertNotEqual(
+            add_integers(n1, n2),
+            expected_value
+        )
 
     def test_assert_int_int_raises_no_error(self):
-        pass
+        for n in range(-100, 101):
+            self.assertTrue(n)
 
     def test_assert_int_non_int_raises_typeerror(self):
-        pass
+        n1 = 6
+        n2 = 2
+        arg = n1, n2
+        if arg is None:
+            raise TypeError
 
 if __name__ == '__main__':
     unittest.main()
